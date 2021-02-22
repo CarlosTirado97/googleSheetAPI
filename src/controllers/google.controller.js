@@ -12,10 +12,11 @@ const formNuevo = (req, res) => {
 
 const agregar = (req, res) => {
     const info = [
-        { CVE: 1, Partida: 'CIMENTACION', Importe: 100.50 },
-        { CVE: 2, Partida: 'PINTURA', Importe: 1540.50 }
+        { CVE: 'Carlos Fernando Tirado Páez', PARTIDA: 'Carlos', IMPORTE: 100.50 },
+        { CVE: 2, PARTIDA: 'Fernando', IMPORTE: 1540.50 }
     ]
-    googleSheet.agregarASheet(info)
+    const singleInfo = 'Arre pues'
+    googleSheet.agregarASheet(singleInfo)
     res.redirect('/')
 }
 
